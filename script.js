@@ -3,8 +3,8 @@ $(function() {
   //Exercise 1
   $('.accordion-header').on('click', function() {
     $('.accordion-content').slideUp() //everything slideup
-    if(!$(this).next('.accordion-content').is(':visible')) {
-      $(this).next('.accordion-content').slideDown()
+    if(!$(this).next().is(':visible')) {
+      $(this).next().slideDown()
     }
   })
 
